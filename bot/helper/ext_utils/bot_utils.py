@@ -272,7 +272,7 @@ def get_readable_message():
         bmsg += f"\n<b>DN:</b> {get_readable_file_size(dlspeed_bytes)}/s<b> | UP:</b> {get_readable_file_size(upspeed_bytes)}/s"
 
         buttons = ButtonMaker()
-        buttons.sbutton("Updates", "https://t.me/BETA_BOTZ")
+        buttons.sbutton("Refresh", str(ONE))
         buttons.sbutton("Close", str(TWO))
         buttons.sbutton("Statistics", str(THREE))
         sbutton = InlineKeyboardMarkup(buttons.build_menu(2))
